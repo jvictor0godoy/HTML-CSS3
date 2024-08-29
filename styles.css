@@ -163,8 +163,10 @@ section, .container, a, button {
 
 #propostas .container {
     max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
+    
+    padding: 20px;
+    position: relative;
+    text-align: center;
 }
 
 #propostas h2 {
@@ -232,4 +234,13 @@ section, .container, a, button {
     height: 100%;
     object-fit: cover; /* Ajusta o vídeo para cobrir o contêiner */
     transform: translate(-50%, -50%); /* Centraliza o vídeo no contêiner */
+}
+.candidato-img {
+    width: 200px;
+    height: auto;
+    border-radius: 100px;
+    border: 3px solid #6dad0a; /* Amarelo do PL */
+    
+    top: 10px;
+    left: 10px;
 }
