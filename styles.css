@@ -1,0 +1,235 @@
+/* Arquivo: styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('igreja-matriz.89ac098b.jpg') no-repeat center center fixed;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+}
+section, .container, a, button {
+    border: none !important;
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+.about-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.background-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 45, 156, 0.7); /* Azul escuro do PL com opacidade */
+    backdrop-filter: blur(10px); /* Aplica o desfoque */
+    z-index: -1;
+}
+
+.header, .social-links, .about, .contact, .footer {
+    position: relative;
+    z-index: 2;
+}
+
+.header {
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+   
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 36px;
+}
+
+.header p {
+    font-size: 18px;
+    margin: 10px 0 0;
+}
+
+/* Estilo do menu de redes sociais */
+
+/* Adicionar espaçamento entre os ícones */
+.social-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* Espaçamento entre os ícones */
+}
+
+/* Estilo dos links */
+.social-menu a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+    border-radius: 50%;
+    background-color: #32cd32; /* Verde inicial */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Animação ao passar o mouse */
+.social-menu a:hover {
+    background-color: #ffd700; /* Amarelo no hover */
+    color: #002d9c; /* Azul escuro do PL no hover */
+    transform: scale(1.1); /* Aumenta ligeiramente o ícone */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Aumenta a sombra no hover */
+}
+
+/* Ajustes para ícones no menu de redes sociais */
+.social-menu i {
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.social-menu a:hover i {
+    transform: rotate(10deg); /* Ligeira rotação no ícone ao passar o mouse */
+}
+.social-icon {
+    width: 24px;
+    height: 24px;
+    fill: white;
+    transition: fill 0.3s ease;
+}
+
+.social-menu a:hover .social-icon {
+    fill: #002d9c; /* Altere a cor do ícone ao passar o mouse */
+}
+
+.about, .contact {
+    padding: 40px 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    margin: 20px 0;
+    border-radius: 10px;
+    border: 3px solid #32cd32; /* Bordas verdes nas seções */
+}
+
+.about h2, .contact h2 {
+    color: #002d9c; /* Azul escuro do PL */
+    margin-bottom: 20px;
+}
+
+.contact .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #32cd32; /* Verde no botão */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    border: 2px solid #ffd700; /* Borda amarela no botão */
+}
+
+.contact .btn:hover {
+    background-color: #ffd700; /* Amarelo para o hover */
+    color: #002d9c; /* Azul escuro do PL no hover */
+}
+
+.footer {
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    background-color: rgba(0, 45, 156, 0.8);
+    border-radius: 10px;
+    margin: 20px 0;
+    
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+#propostas {
+    padding: 50px 0;
+    background-color: #f8f8f8; /* Cor de fundo suave */
+}
+
+#propostas .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+#propostas h2 {
+    text-align: center;
+    color: #002d9c; /* Cor azul escuro do PL */
+    margin-bottom: 40px;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.propostas-lista {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.proposta {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.proposta h3 {
+    color: #32cd32; /* Verde */
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.proposta p {
+    color: #444;
+    line-height: 1.6;
+}
+/* Estilos para o vídeo */
+.video-section {
+    text-align: center;
+   
+    background-color: #f9f9f9;
+}
+
+.video-section h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.video-section p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.video-container {
+    position: relative;
+    max-width: 80%; /* Define a largura máxima do vídeo */
+    height: 300px; /* Define a altura fixa do vídeo */
+    margin: 0 auto; /* Centraliza o vídeo */
+    background: #000;
+    overflow: hidden; /* Esconde o excesso de vídeo que ultrapassa o contêiner */
+}
+
+.video-container video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ajusta o vídeo para cobrir o contêiner */
+    transform: translate(-50%, -50%); /* Centraliza o vídeo no contêiner */
+}
