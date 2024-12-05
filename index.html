@@ -1,94 +1,33 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alemão Casanova - Partido PL Aquidauana/MS</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="background-overlay"></div>
-    
-    <header class="header">
-        <div class="container">
-            <h1>Alemão Casanova</h1>
-            <p>Candidato a vereador pelo Partido Liberal (PL) de Aquidauana/MS</p>
+    <div class="box">
+        <p>C*zinho hoje?</p>
+        <div class="buttons-container">
+            <button>
+                <a href="https://link.com">Sim</a>
+            </button>
+            <button id="no">
+                     Não               
+            </button>
         </div>
-    </header>
-
-    <nav class="social-links">
-        <div class="container">
-            <ul class="social-menu">
-                
-                <li><a href="https://www.facebook.com/alemaocasanovams" target="_blank">
-                    <img src="facebook.svg" alt="X (antigo Twitter)" class="social-icon">
-                </a></li>
-                <li><a href="https://www.instagram.com/alemaocasanovams/" target="_blank">
-                    <img src="instagram.svg" alt="X (antigo Twitter)" class="social-icon">
-                </a></li>
-                <li><a href="https://wa.link/emej2f" target="_blank">
-                    <img src="whatsapp.svg" alt="X (antigo Twitter)" class="social-icon">
-                </a></li>
-                                 
-            </ul>
-        </div>
-    </nav>
-    
-       <section id="propostas">
-        <div class="container">
-            <img src="SaveClip.App_457305901_2200904630289559_1107290331713529079_n.jpg" alt="Candidato do PL" class="candidato-img">
-            <h2>Nossas Propostas</h2>
-            <div class="propostas-lista">
-                <div class="proposta">
-                    <h3>1. Respeito à Constituição</h3>
-                    <p>Garantir que as leis municipais estejam em conformidade com a Constituição Federal.</p>
-                </div>
-                <div class="proposta">
-                    <h3>2. Fortalecimento da Família</h3>
-                    <p>Promover políticas públicas que valorizem e protejam as famílias aquidauanenses.</p>
-                </div>
-                <div class="proposta">
-                    <h3>3. Defesa da Vida</h3>
-                    <p>Apoiar iniciativas que protejam a vida desde a concepção até seu término natural.</p>
-                </div>
-                <div class="proposta">
-                    <h3>4. Liberdade de Expressão</h3>
-                    <p>Assegurar o direito de todos se expressarem livremente, sem censura ou represálias.</p>
-                </div>
-                <div class="proposta">
-                    <h3>5. Propriedade Privada</h3>
-                    <p>Defender o direito à propriedade privada e combater invasões ilegais.</p>
-                </div>
-                <div class="proposta">
-                    <h3>6. Segurança Pública</h3>
-                    <p>Garantir o direito à defesa e apoiar medidas que reforcem a segurança em nossa cidade.</p>
-                </div>
-                <div class="proposta">
-                    <h3>7. Redução da Carga Tributária</h3>
-                    <p>Trabalhar por uma tributação mais justa, que não onere excessivamente os cidadãos e empresas locais.</p>
-                </div>
-                <div class="proposta">
-                    <h3>8. Liberdade Econômica</h3>
-                    <p>Incentivar o empreendedorismo e a criação de empregos, reduzindo burocracias e fomentando a economia local.</p>
-                </div>
-                <div class="proposta">
-                    <h3>9. Desenvolvimento Sustentável</h3>
-                    <p>Apoiar a agroindústria e o turismo de forma sustentável, respeitando o meio ambiente e os recursos naturais.</p>
-                </div>
-                <div class="proposta">
-                    <h3>10. Combate às Drogas</h3>
-                    <p>Implementar políticas de prevenção e tratamento contra o uso de drogas, visando a saúde e o bem-estar da comunidade.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2024 Alemão Casanova CNPJ: 56.766.649/0001-72| Partido Liberal - PL Aquidauana/MS</p>
-        </div>
-    </footer>
+    </div>
 </body>
+<script>
+    let button = document.getElementById('no')
+    let height = window.innerHeight - 50
+    let width = window.innerWidth - 50
+
+    button.addEventListener('mouseover', function(){
+        button.style.position = "absolute"
+        button.style.top = Math.random() * height + "px"
+        button.style.left = Math.random() * width + "px"
+    })
+</script>
 </html>
